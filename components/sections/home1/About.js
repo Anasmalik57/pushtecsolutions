@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -11,7 +12,7 @@ export default function About() {
                                 <div className="about-two-sec-image">
                                 <div className="about-two-sec-image-bg-1" style={{ backgroundImage: 'url(assets/images/about/about-2--pattern-1.png)' }} ></div>
                                 <div className="about-two-sec-image-bg-2" style={{ backgroundImage: 'url(assets/images/about/about-2--pattern-2.png)' }} ></div>
-                                    <img src="assets/images/about/about-page-img-1.jpg" alt=""/>
+                                    <Image src="/assets/images/about/about-page-img-l.webp" width={600} height={400}  alt="about page img"/>
                                 </div>
                             </div>
                         </div>
@@ -19,8 +20,8 @@ export default function About() {
                             <div className="about-two-right-content">
                                 <div className="about-two-title">
                                     <h4 className="sub-title-shape-left section_title-subheading">About Our Company</h4>
-                                    <h2>Welcome to Hactora a leading manufacturer </h2>
-                                    <p className="about-two-title-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque abillo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia.</p>
+                                    <h2>Welcome to PushTech Solutions </h2>
+                                    <p className="about-two-title-text">With 15 years of experience, 100% quality components, and an assured hassle-free experience, Pushtec Solutions delivers an Assured & Proven Quality Guarantee along with the most user-friendly machines. Pushtec Solutions also offers an array of services to support its wide base of installed equipment in India and abroad. To date, the company has successfully installed over 14,500 machines and manages all installations efficiently through a strong internal service team.</p>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6">
@@ -45,12 +46,12 @@ export default function About() {
                                     </div>
                                 </div>
                                 
-                                <div className="about-two-bottom-content">
+                                {/* <div className="about-two-bottom-content">
                                     <h3>John Franclin - <span>CEO & Founder</span></h3>
                                     <div className="signature">
                                         <img src="assets/images/about/signature-1.png" alt=""/>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

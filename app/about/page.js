@@ -81,23 +81,23 @@ export default function Home() {
                                 <div className="about-two-title">
                                     <h4 className="sub-title-shape-left section_title-subheading">About Us</h4>
                                     <h2>Introduction to factory</h2>
-                                    <p className="about-two-title-text">Panasonic's Manufacturing Technology Supports Factories around the World. Factories are at the heart</p>
+                                    <p className="about-two-title-text">With 15 years of experience, 100% quality components, and an assured hassle-free experience, Pushtec Solutions delivers an Assured & Proven Quality Guarantee along with the most user-friendly machines. Pushtec Solutions also offers an array of services to support its wide base of installed equipment in India and abroad. To date, the company has successfully installed over 14,500 machines and manages all installations efficiently through a strong internal service team.</p>
                                 </div>
                                 <div className="about-tow-experience-years style-two">
                                     <div className="about-tow-experience-years-icon">
                                         <span className="flaticon-medal"></span>
                                     </div>
                                     <div className="about-tow-experience-years-text">
-                                        <h2>25</h2>
+                                        <h2>15+</h2>
                                         <p>Years of Experience</p>
                                     </div>
                                 </div>
-                                <div className="about-two-bottom-content">
+                                {/* <div className="about-two-bottom-content">
                                     <p className="about-two-bottom-text">primary business activities. ... For example, while an automobile manufacturer might have a financing division  that contributes 10% to the firm's overall revenues,</p>
                                     <h3>John Franclin - <span>CEO & Founder</span></h3>
-                                </div>
+                                </div> */}
                                 <div className="about-two-btn">
-                                    <Link href="" className="theme-btn">About Us</Link>
+                                    <Link href="/contact" className="theme-btn">Contact Us</Link>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,100 @@
+  /*
+    Flaticon icon font: Flaticon
+    Creation date: 21/08/2020 04:13
+    */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-robotic-arm:before { content: "\f100"; }
+.flaticon-architect:before { content: "\f101"; }
+.flaticon-mechanic:before { content: "\f102"; }
+.flaticon-engineer:before { content: "\f103"; }
+.flaticon-engineer-1:before { content: "\f104"; }
+.flaticon-paint-roller:before { content: "\f105"; }
+.flaticon-crane:before { content: "\f106"; }
+.flaticon-tools:before { content: "\f107"; }
+.flaticon-conveyor:before { content: "\f108"; }
+.flaticon-screw:before { content: "\f109"; }
+.flaticon-settings:before { content: "\f10a"; }
+.flaticon-settings-1:before { content: "\f10b"; }
+.flaticon-compass:before { content: "\f10c"; }
+.flaticon-blueprint:before { content: "\f10d"; }
+.flaticon-idea:before { content: "\f10e"; }
+.flaticon-book:before { content: "\f10f"; }
+.flaticon-price-tag:before { content: "\f110"; }
+.flaticon-mail:before { content: "\f111"; }
+.flaticon-customer-support:before { content: "\f112"; }
+.flaticon-document:before { content: "\f113"; }
+.flaticon-clock:before { content: "\f114"; }
+.flaticon-calendar-date:before { content: "\f115"; }
+.flaticon-briefcase:before { content: "\f116"; }
+.flaticon-dialog:before { content: "\f117"; }
+.flaticon-check:before { content: "\f118"; }
+.flaticon-email:before { content: "\f119"; }
+.flaticon-clock-1:before { content: "\f11a"; }
+.flaticon-mailbox:before { content: "\f11b"; }
+.flaticon-telephone:before { content: "\f11c"; }
+.flaticon-plus:before { content: "\f11d"; }
+.flaticon-stopwatch:before { content: "\f11e"; }
+.flaticon-minus:before { content: "\f11f"; }
+.flaticon-menu:before { content: "\f120"; }
+.flaticon-checkmark:before { content: "\f121"; }
+.flaticon-plus-1:before { content: "\f122"; }
+.flaticon-dot:before { content: "\f123"; }
+.flaticon-home:before { content: "\f124"; }
+.flaticon-hexagon:before { content: "\f125"; }
+.flaticon-diploma:before { content: "\f126"; }
+.flaticon-medal:before { content: "\f127"; }
+.flaticon-badge:before { content: "\f128"; }
+.flaticon-like:before { content: "\f129"; }
+.flaticon-lab-tool:before { content: "\f12a"; }
+.flaticon-team:before { content: "\f12b"; }
+.flaticon-development:before { content: "\f12c"; }
+.flaticon-process:before { content: "\f12d"; }
+.flaticon-placeholder:before { content: "\f12e"; }
+.flaticon-phone-call-1:before { content: "\f12f"; }
+.flaticon-phone-call:before { content: "\f130"; }
+.flaticon-telephone-1:before { content: "\f131"; }
+.flaticon-call:before { content: "\f132"; }
+.flaticon-placeholder-1:before { content: "\f133"; }
+.flaticon-industrial-robot:before { content: "\f134"; }
+.flaticon-assembly:before { content: "\f135"; }
+.flaticon-manufacture:before { content: "\f136"; }
+.flaticon-factory:before { content: "\f137"; }
+.flaticon-robot-arm:before { content: "\f138"; }
+.flaticon-robotic:before { content: "\f139"; }
+.flaticon-manufacturing:before { content: "\f13a"; }
+.flaticon-welder:before { content: "\f13b"; }
+.flaticon-manufacturing-1:before { content: "\f13c"; }
+.flaticon-machinery:before { content: "\f13d"; }
+.flaticon-factory:before { content: "\f13e"; }
+.flaticon-building:before { content: "\f13f"; }
+.flaticon-mechanical-arm:before { content: "\f140"; }
+.flaticon-technology:before { content: "\f141"; }
+.flaticon-carbon:before { content: "\f142"; }
+.flaticon-manufacturing-2:before { content: "\f143"; }
+.flaticon-factory-1:before { content: "\f144"; }
+.flaticon-factory-1:before { content: "\f145"; }

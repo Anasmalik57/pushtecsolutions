@@ -51,7 +51,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu }) => {
                         <li><Link href="project">Project</Link></li>
                         <li><Link href="project-details">Project Details</Link></li>
                         <li><Link href="faq">Faq</Link></li>
-                        <li><Link href="error">Error</Link></li>
+                        {/* <li><Link href="error">Error</Link></li> */}
                     </ul>
                     <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="fa fa-angle-right" /></div>
                 </li>

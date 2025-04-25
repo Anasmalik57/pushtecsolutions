@@ -27,7 +27,7 @@ export default function Menu() {
                         <li><Link href="project">Project</Link></li>
                         <li><Link href="project-details">Project Details</Link></li>
                         <li><Link href="faq">Faq</Link></li>
-                        <li><Link href="error">Error</Link></li>
+                        {/* <li><Link href="error">Error</Link></li> */}
                     </ul>
                 </li>
                 <li className="dropdown"><Link href="#">Services</Link>

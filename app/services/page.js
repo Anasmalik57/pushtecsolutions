@@ -154,8 +154,8 @@ export default function Home() {
                                             <a onClick={() => setOpen(true)} className="video-two-sec-btn video-popup"><i className="fa fa-play"></i></a>
                                         </div>
                                         <div className="video-two-sec-content">
-                                            <h2>We offer best <span>industrial services.</span> <br/> 25+ years of experience</h2>
-                                            <p>Manufacturing Technology Supports Factories around </p>
+                                            <h2>We offer best <span>industrial services.</span> <br/> 15+ years of experience</h2>
+                                            <p>Manufacturing Technology Supports Factories around... </p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,66 +166,7 @@ export default function Home() {
                     <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />  
                     
                     {/*Start Brand One Section */}      
-                    <div className="brand-one">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-xl-12">
-                                        <Swiper {...swiperOptions} className="brand-one-carousel owl-carousel">
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-1.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-2.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-3.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-4.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-5.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-1.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-2.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-3.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-4.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                            <div className="single_brand_item">
-                                                <Link href="#"><img src="assets/images/brand/brand-1-5.jpg" alt="brand"/></Link>
-                                            </div>
-                                            </SwiperSlide>
-                                        </Swiper>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
                     {/*End Brand One Section */} 
                     
                     {/*Start Newsletter One Section */} 

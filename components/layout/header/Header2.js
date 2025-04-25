@@ -61,7 +61,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                                             </div>
                                             <div className="address_title">
                                                 <h6>Phone</h6>
-                                                <p><Link href="tel:123456789">+812 555 33 44</Link></p>
+                                                <p><Link href="tel:+917466903135">+91 7466903135</Link></p>
                                             </div>
                                         </li>
                                     </ul>

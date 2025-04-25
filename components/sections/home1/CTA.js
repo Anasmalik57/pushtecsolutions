@@ -17,8 +17,8 @@ export default function Cta() {
                                     <a onClick={() => setOpen(true)} className="video-two-sec-btn video-popup"><i className="fa fa-play"></i></a>
                                 </div>
                                 <div className="video-two-sec-content">
-                                    <h2>We offer best <span>industrial services.</span> <br/> 25+ years of experience</h2>
-                                    <p>Manufacturing Technology Supports Factories around </p>
+                                    <h2>We offer the best <span>industrial services.</span> <br/> 15+ years of experience</h2>
+                                    <p>Pushtec Solutions Empowers FMCG Factories with Cutting-Edge Technology. </p>
                                 </div>
                             </div>
                         </div>

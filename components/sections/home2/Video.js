@@ -15,7 +15,7 @@ export default function Video() {
                         <div className="video-one-sec-content">
                             <div className="video-one-sec-inner">
                                 <h2>Explore Our Factory</h2>
-                                <p>Manufacturing Technology Supports Factories around the World. Factories are at the heart of manufacturing.</p>
+                                <p>Pushtec Solutions Powers FMCG Innovation Worldwide.Factories are the backbone of manufacturing excellence.</p>
                                 <a onClick={() => setOpen(true)} className="video-one-sec-btn video-popup"><i className="fa fa-play"></i></a>
                             </div>
                         </div>

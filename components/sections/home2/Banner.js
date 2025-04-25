@@ -33,6 +33,7 @@ export default function Banner() {
 
             {/* Bnner Section */}
             <section className="banner-section two wow fadeIn">
+                {/* <h1>BodyPlay</h1> */}
                 <div className="swiper-container banner-slider">
                     <Swiper {...swiperOptions} className="swiper-wrapper">
 

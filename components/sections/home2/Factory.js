@@ -9,7 +9,7 @@ export default function Factory() {
                 <div className="row">
                     <div className="col-xl-12">
                         <div className="factory-solutions-one-inner">
-                            <h2>Concerning the problem of process <br/> and resource allocation the <span>Factory Solutions</span></h2>
+                            <h2>Concerning the optimization of process <br/>  and resource allocation at  <span>Pushtec Solutions</span></h2>
                         </div>
                     </div>
                 </div>

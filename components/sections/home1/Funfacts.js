@@ -31,7 +31,7 @@ export default function Funfacts() {
                                     <h2>
                                         <CounterUp end={780} />
                                     </h2>
-                                    <p>Expeart Engeneers</p>
+                                    <p>Expert Engineers</p>
                                 </div>
                             </div>
                         </div>

@@ -27,7 +27,7 @@ export default function Home() {
                 <Projects />
                 <Testimonial />
                 <News />
-                <Clients />
+                {/* <Clients /> */}
             </Layout>
         </>
     )

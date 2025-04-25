@@ -23,7 +23,7 @@ export default function Blog() {
                                         </li>
                                     </ul>
                                     <div className="blog-one-title">
-                                        <h3><Link href="#">Manufacturer might have a financing</Link></h3>
+                                        <h3><Link href="#">How Custom Machinery Boosts FMCG Efficiency</Link></h3>
                                     </div>
                                     <div className="blog-one-text">
                                         <p>Factory is a group of companies that are related based on their primary business activities. ...</p>

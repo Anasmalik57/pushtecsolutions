@@ -28,7 +28,7 @@ export default function Home() {
                 <Whychoose />
                 <Team />
                 <Blog />
-                <Brand />
+                {/* <Brand /> */}
 
             </Layout>
         </>

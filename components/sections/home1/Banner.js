@@ -40,8 +40,10 @@ export default function Banner() {
                     MACHINERIES{" "}
                   </h1>
                   <div className="text">
-                  Manufacturing Technology Supports Factories around the World. <br />
-                  Factories are at the heart of manufacturing.
+                    Pushtec solutions provide machinery tailored to your
+                    specific needs, focusing on efficiency, precision, and
+                    adaptability. Our solutions enhance productivity and
+                    performance across FMCG industries.
                   </div>
                   <div className="link-box">
                     <Link href="about" className="theme-btn btn-style-one">
@@ -59,7 +61,7 @@ export default function Banner() {
             <div className="content-outer">
               <div className="content-box">
                 <div className="inner">
-                <h1>
+                  <h1>
                     MANUFACTURING <br /> CUSTOMIZABLE <br />
                     MACHINERIES{" "}
                   </h1>

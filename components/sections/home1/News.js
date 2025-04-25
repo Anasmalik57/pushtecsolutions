@@ -23,10 +23,10 @@ export default function News() {
                                         </li>
                                     </ul>
                                     <div className="blog-one-title">
-                                        <h3><Link href="#">Manufacturer might have a financing</Link></h3>
+                                        <h3><Link href="#">How Custom Machinery Boosts FMCG Efficiency</Link></h3>
                                     </div>
                                     <div className="blog-one-text">
-                                        <p>Factory is a group of companies that are related based on their primary business activities. ...</p>
+                                        <p>Discover how Pushtec’s tailored machinery solutions can streamline your FMCG production, reduce downtime, and improve overall efficiency in your operations.</p>
                                     </div>
                                 </div>
                             </div>
@@ -44,10 +44,10 @@ export default function News() {
                                         </li>
                                     </ul>
                                     <div className="blog-one-title">
-                                        <h3><Link href="#">Factories are at the heart of manufacturing.</Link></h3>
+                                        <h3><Link href="#">The Role of Precision in Modern Manufacturing</Link></h3>
                                     </div>
                                     <div className="blog-one-text">
-                                        <p>Factory is a group of companies that are related based on their primary business activities. ...</p>
+                                        <p>Learn how precision-engineered machinery from Pushtec enhances product quality and consistency for FMCG businesses, ensuring top-tier performance.</p>
                                     </div>
                                 </div>
                             </div>
@@ -65,10 +65,10 @@ export default function News() {
                                         </li>
                                     </ul>
                                     <div className="blog-one-title">
-                                        <h3><Link href="#">Factory Solutions offers to all production companies</Link></h3>
+                                        <h3><Link href="#">Adapting Machinery for FMCG Innovation</Link></h3>
                                     </div>
                                     <div className="blog-one-text">
-                                        <p>Factory is a group of companies that are related based on their primary business activities. ...</p>
+                                        <p>Explore how Pushtec’s adaptable machinery solutions help FMCG companies innovate, scale, and stay ahead in a competitive market.</p>
                                     </div>
                                 </div>
                             </div>

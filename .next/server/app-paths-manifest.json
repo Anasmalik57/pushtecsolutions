@@ -1,8 +1,7 @@
 {
-  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/project-details/page": "app/project-details/page.js",
   "/blog-classic/page": "app/blog-classic/page.js",
-  "/blog-details/page": "app/blog-details/page.js",
-  "/blog/page": "app/blog/page.js"
+  "/blog/page": "app/blog/page.js",
+  "/blog-details/page": "app/blog-details/page.js"
 }

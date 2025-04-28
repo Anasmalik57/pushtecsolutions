@@ -53,7 +53,7 @@ export default function Feature() {
                     <i className="flaticon-lab-tool"></i>
                   </div>
                   <h3 style={{ textTransform: "capitalize" }}>
-                    Single head tube filling machine
+                    Double head tube filling machine
                   </h3>
                   <p style={{ textAlign: "justify" }}>
                     Efficient and reliable, our Single Head Tube Filling Machine
@@ -78,7 +78,7 @@ export default function Feature() {
                     <i className="flaticon-carbon"></i>
                   </div>
                   <h3 style={{ textTransform: "capitalize" }}>
-                    Single head tube filling machine
+                    Double head tube filling machine
                   </h3>
                   <p style={{ textAlign: "justify" }}>
                     Efficient and reliable, our Single Head Tube Filling Machine

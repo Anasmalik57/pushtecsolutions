@@ -1,10 +1,57 @@
+"use client";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+
 export default function Home() {
+  // Comments data array
+  const comments = [
+    {
+      name: "Ricardo Gomez",
+      date: "05 May 2020",
+      image: "assets/images/Blog/comment-1-1.png",
+      text: "The focus on customizable machinery has transformed our factory operations—highly recommend Pushtec!",
+    },
+    {
+      name: "Peter Sandler",
+      date: "05 May 2020",
+      image: "assets/images/Blog/comment-1-2.png",
+      text: "Pushtec’s expertise in precision engineering has boosted our productivity significantly.",
+    },
+  ];
+
+  // Instagram images data array
+  const instagramImages = [
+    "assets/images/Blog/instagram-img-1.jpg",
+    "assets/images/Blog/instagram-img-2.jpg",
+    "assets/images/Blog/instagram-img-3.jpg",
+    "assets/images/Blog/instagram-img-4.jpg",
+    "assets/images/Blog/instagram-img-5.jpg",
+    "assets/images/Blog/instagram-img-6.jpg",
+  ];
+
+  // Latest posts data array
+  const latestPosts = [
+    {
+      image: "assets/images/blog/ln-1.jpg",
+      title: "Manufacturer might have a financing",
+      date: "02 May, 2020",
+    },
+    {
+      image: "assets/images/blog/ln-2.jpg",
+      title: "Manufacturer might have a financing",
+      date: "02 May, 2020",
+    },
+    {
+      image: "assets/images/blog/ln-3.jpg",
+      title: "Manufacturer might have a financing",
+      date: "02 May, 2020",
+    },
+  ];
+
   return (
     <>
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Details">
-        {/*Start Blog Classic Section*/}
+        {/* Start Blog Classic Section */}
         <section className="blog-details-section">
           <div className="container">
             <div className="row">
@@ -129,39 +176,22 @@ export default function Home() {
                   </div>
                   <div className="comment-one">
                     <h3 className="comment-one-title">Comments</h3>
-                    <div className="comment-one-single">
-                      <div className="comment-one-image">
-                        <img src="assets/images/Blog/comment-1-1.png" alt="" />
+                    {comments.map((comment, index) => (
+                      <div key={index} className="comment-one-single">
+                        <div className="comment-one-image">
+                          <img src={comment.image} alt={comment.name} />
+                        </div>
+                        <div className="comment-one-content">
+                          <h3>
+                            {comment.name} <span>{comment.date}</span>
+                          </h3>
+                          <p>{comment.text}</p>
+                          <Link href="#" className="comment-one-btn">
+                            <i className="fa fa-reply-all"></i> Reply
+                          </Link>
+                        </div>
                       </div>
-                      <div className="comment-one-content">
-                        <h3>
-                          Ricardo Gomez <span>05 May 2020</span>
-                        </h3>
-                        <p>
-                          The focus on customizable machinery has transformed
-                          our factory operations—highly recommend Pushtec!
-                        </p>
-                        <Link href="#" className="comment-one-btn">
-                          <i className="fa fa-reply-all"></i> Reply
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="comment-one-single">
-                      <div className="comment-one-image">
-                        <img src="assets/images/Blog/comment-1-2.png" alt="" />
-                      </div>
-                      <div className="comment-one-content">
-                        <h3>
-                          Peter Sandler <span>05 May 2020</span>
-                        </h3>
-                        <p>
-                        Pushtec’s expertise in precision engineering has boosted our productivity significantly.
-                        </p>
-                        <Link href="#" className="comment-one-btn">
-                          <i className="fa fa-reply-all"></i> Reply
-                        </Link>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                   <div className="comment-form">
                     <h3 className="comment-form-title">Leave a Comment</h3>
@@ -262,45 +292,19 @@ export default function Home() {
                   <div className="sidebar-single sidebar-latest-news">
                     <h3 className="sidebar-title">Latest Posts</h3>
                     <ul className="sidebar-latest-news-list">
-                      <li>
-                        <div className="sidebar-latest-news-image">
-                          <img src="assets/images/blog/ln-1.jpg" alt="" />
-                        </div>
-                        <div className="sidebar-latest-news-content">
-                          <h3>
-                            <Link href="#">
-                              Manufacturer might have a financing
-                            </Link>
-                          </h3>
-                          <p>02 May, 2020</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="sidebar-latest-news-image">
-                          <img src="assets/images/blog/ln-2.jpg" alt="" />
-                        </div>
-                        <div className="sidebar-latest-news-content">
-                          <h3>
-                            <Link href="#">
-                              Manufacturer might have a financing
-                            </Link>
-                          </h3>
-                          <p>02 May, 2020</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="sidebar-latest-news-image">
-                          <img src="assets/images/blog/ln-3.jpg" alt="" />
-                        </div>
-                        <div className="sidebar-latest-news-content">
-                          <h3>
-                            <Link href="#">
-                              Manufacturer might have a financing
-                            </Link>
-                          </h3>
-                          <p>02 May, 2020</p>
-                        </div>
-                      </li>
+                      {latestPosts.map((post, index) => (
+                        <li key={index}>
+                          <div className="sidebar-latest-news-image">
+                            <img src={post.image} alt="" />
+                          </div>
+                          <div className="sidebar-latest-news-content">
+                            <h3>
+                              <Link href="#">{post.title}</Link>
+                            </h3>
+                            <p>{post.date}</p>
+                          </div>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div className="sidebar-single sidebar-archive">
@@ -331,72 +335,16 @@ export default function Home() {
                   <div className="sidebar-single sidebar-instagram">
                     <h3 className="sidebar-title">Instagram</h3>
                     <ul className="sidebar-instagram-list">
-                      <li>
-                        <div className="instagram-img">
-                          <img
-                            src="assets/images/Blog/instagram-img-1.jpg"
-                            alt=""
-                          />
-                          <div className="sidebar-instagram-img-hover">
-                            <i className="fa fa-link"></i>
+                      {instagramImages.map((image, index) => (
+                        <li key={index}>
+                          <div className="instagram-img">
+                            <img src={image} alt="" />
+                            <div className="sidebar-instagram-img-hover">
+                              <i className="fa fa-link"></i>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="instagram-img">
-                          <img
-                            src="assets/images/Blog/instagram-img-2.jpg"
-                            alt=""
-                          />
-                          <div className="sidebar-instagram-img-hover">
-                            <i className="fa fa-link"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="instagram-img">
-                          <img
-                            src="assets/images/Blog/instagram-img-3.jpg"
-                            alt=""
-                          />
-                          <div className="sidebar-instagram-img-hover">
-                            <i className="fa fa-link"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="instagram-img">
-                          <img
-                            src="assets/images/Blog/instagram-img-4.jpg"
-                            alt=""
-                          />
-                          <div className="sidebar-instagram-img-hover">
-                            <i className="fa fa-link"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="instagram-img">
-                          <img
-                            src="assets/images/Blog/instagram-img-5.jpg"
-                            alt=""
-                          />
-                          <div className="sidebar-instagram-img-hover">
-                            <i className="fa fa-link"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="instagram-img">
-                          <img
-                            src="assets/images/Blog/instagram-img-6.jpg"
-                            alt=""
-                          />
-                          <div className="sidebar-instagram-img-hover">
-                            <i className="fa fa-link"></i>
-                          </div>
-                        </div>
-                      </li>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div className="sidebar-single sidebar-tag">
@@ -416,9 +364,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/*End Blog Classic Section*/}
+        {/* End Blog Classic Section */}
 
-        {/*Start Newsletter One Section */}
+        {/* Start Newsletter One Section */}
         <section className="newsletter-one-section">
           <div className="container">
             <div className="row">
@@ -439,7 +387,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/*End Newsletter One Section */}
+        {/* End Newsletter One Section */}
       </Layout>
     </>
   );

@@ -113,97 +113,143 @@ export const machines = [
     image: "assets/images/service/service-1-img-3.jpg",
     delay: "900ms",
   },
+  {
+    count: "04",
+    icon: "flaticon-carbon",
+    title: "Box Tape machine",
+    description:
+      "Engineered for productivity, our Box Taping Machine delivers fast, precise sealing to streamline packaging operations across a variety of carton.",
+    image: "assets/images/service/service-1-img-4.jpg",
+    delay: "900ms",
+  },
+  {
+    count: "05",
+    icon: "flaticon-carbon",
+    title: "MFG Vessels & Tank",
+    description:
+      "Engineered for tough tasks, our MFG Vessels & Tanks deliver reliable, efficient performance across industrial applications.",
+    image: "assets/images/service/service-1-img-5.jpg",
+    delay: "900ms",
+  },
+  {
+    count: "06",
+    icon: "flaticon-carbon",
+    title: "MFG Vessel Machine",
+    description:
+      "Engineered for productivity, our Box Taping Machine delivers fast, precise sealing to streamline packaging operations across a variety of carton.",
+    image: "assets/images/service/service-1-img-6.jpg",
+    delay: "900ms",
+  },
+  {
+    count: "07",
+    icon: "flaticon-carbon",
+    title: "MFG Vessel & Tank",
+    description:
+      "Engineered for durability and efficiency, our MFG Vessels & Tanks are built to handle demanding industrial processes, ensuring reliable performance and streamlined operations across various applications.",
+    image: "assets/images/service/service-1-img-7.jpg",
+    delay: "900ms",
+  },
 ];
 
-// Services 
+// Services
 export const services = [
-    {
-      category: "Mechanic",
-      title: "Mechanical Engineering",
-      image: "assets/images/service/service-page-1-img-1.jpg",
-      delay: "100ms",
-    },
-    {
-      category: "Pharmacy",
-      title: "Suppliers of Pharmaceuticals",
-      image: "assets/images/service/service-page-1-img-2.jpg",
-      delay: "200ms",
-    },
-    {
-      category: "Machinery",
-      title: "Packaging Machinery",
-      image: "assets/images/service/service-page-1-img-3.jpg",
-      delay: "300ms",
-    },
-   
-    {
-      category: "Packaging",
-      title: "MFG Vessels",
-      image: "assets/images/service/service-page-1-img-5.jpg",
-      delay: "500ms",
-    },
-    {
-      category: "Spare Parts",
-      title: "Installation Services",
-      image: "assets/images/service/service-page-1-img-6.jpg",
-      delay: "600ms",
-    },
-  ];
+  {
+    category: "Mechanic",
+    title: "Mechanical Engineering",
+    image: "assets/images/service/service-page-1-img-1.jpg",
+    delay: "100ms",
+  },
+  {
+    category: "Pharmacy",
+    title: "Suppliers of Pharmaceuticals",
+    image: "assets/images/service/service-page-1-img-2.jpg",
+    delay: "200ms",
+  },
+  {
+    category: "Machinery",
+    title: "Packaging Machinery",
+    image: "assets/images/service/service-page-1-img-3.jpg",
+    delay: "300ms",
+  },
 
-  // Blog Posts
- export const blogPosts = [
-    {
-      image: "assets/images/Blog/blog-page-img-1.jpg",
-      delay: "100ms",
-      title: "Pushtec’s Machinery Gives Manufacturers a Edge",
-      text: "Discover how our tailored machinery can streamline your production improve overall efficiency.",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-2.jpg",
-      delay: "200ms",
-      title: "Factory Solutions offers to all production companies",
-      text: "Pushtec is a group of companies that are related based on their primary business activities in your bussiness curriculam...",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-3.jpg",
-      delay: "300ms",
-      title: "Factory Solutions offers to all production companies",
-      text: "Pushtec is a group of companies that are related based on their primary business activities…",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-4.jpg",
-      delay: "400ms",
-      title: "Factory Solutions offers to all production companies",
-      text: "factory is a group of companies that are related based on their primary business activities. ...",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-5.jpg",
-      delay: "500ms",
-      title: "Adapting Machinery for FMCG Innovation",
-      text: "Explore how Pushtec’s adaptable machinery solutions help FMCG companies innovate, scale.",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-6.jpg",
-      delay: "600ms",
-      title: "Factory Solutions offers to all production companies",
-      text: "Pushtec is a group of companies that are related based on their primary business activities …",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-7.jpg",
-      delay: "700ms",
-      title: "Boosting Efficiency with Pushtec’s Advanced Technology",
-      text: "See how Pushtec’s cutting-edge machinery optimizes FMCG production processes, enhancing productivity.",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-8.jpg",
-      delay: "800ms",
-      title: "Factory Solutions offers to all production companies",
-      text: "Pushtec is a group of companies that are related based on their primary business activities in your bussiness to improve efficiency…",
-    },
-    {
-      image: "assets/images/Blog/blog-page-img-9.jpg",
-      delay: "900ms",
-      title: "Custom Solutions for FMCG Success",
-      text: "Learn how Pushtec’s bespoke machinery designs meet specific industry needs, driving efficiency and adaptability for global FMCG leaders.",
-    },
-  ];
+  {
+    category: "Packaging",
+    title: "MFG Vessels",
+    image: "assets/images/service/service-page-1-img-5.jpg",
+    delay: "500ms",
+  },
+  {
+    category: "Spare Parts",
+    title: "Installation Services",
+    image: "assets/images/service/service-page-1-img-6.jpg",
+    delay: "600ms",
+  },
+];
+
+// Blog Posts
+export const blogPosts = [
+  {
+    image: "assets/images/Blog/blog-page-img-1.jpg",
+    delay: "100ms",
+    title: "Pushtec’s Machinery Gives Manufacturers a Edge",
+    text: "Discover how our tailored machinery can streamline your production improve overall efficiency.",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-2.jpg",
+    delay: "200ms",
+    title: "Factory Solutions offers to all production companies",
+    text: "Pushtec is a group of companies that are related based on their primary business activities in your bussiness curriculam...",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-3.jpg",
+    delay: "300ms",
+    title: "Factory Solutions offers to all production companies",
+    text: "Pushtec is a group of companies that are related based on their primary business activities…",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-4.jpg",
+    delay: "400ms",
+    title: "Factory Solutions offers to all production companies",
+    text: "factory is a group of companies that are related based on their primary business activities. ...",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-5.jpg",
+    delay: "500ms",
+    title: "Adapting Machinery for FMCG Innovation",
+    text: "Explore how Pushtec’s adaptable machinery solutions help FMCG companies innovate, scale.",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-6.jpg",
+    delay: "600ms",
+    title: "Factory Solutions offers to all production companies",
+    text: "Pushtec is a group of companies that are related based on their primary business activities …",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-7.jpg",
+    delay: "700ms",
+    title: "Boosting Efficiency with Pushtec’s Advanced Technology",
+    text: "See how Pushtec’s cutting-edge machinery optimizes FMCG production processes, enhancing productivity.",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-8.jpg",
+    delay: "800ms",
+    title: "Factory Solutions offers to all production companies",
+    text: "Pushtec is a group of companies that are related based on their primary business activities in your bussiness to improve efficiency…",
+  },
+  {
+    image: "assets/images/Blog/blog-page-img-9.jpg",
+    delay: "900ms",
+    title: "Custom Solutions for FMCG Success",
+    text: "Learn how Pushtec’s bespoke machinery designs meet specific industry needs, driving efficiency and adaptability for global FMCG leaders.",
+  },
+];
+
+// sidebarServices
+export const sidebarServices = [
+  { title: "Custom Machinery Design", href: "#" },
+  { title: "Pharmaceutical & Cosmetic Machinery Supply", href: "#" },
+  { title: "Toothpaste & Liquid Filling Solutions", href: "#" },
+  { title: "Box Tape & Nylon Shlive Machine Supply", href: "#" },
+  { title: "VISSAL Storage Tank Manufacturing", href: "#" },
+  { title: "Spare Parts & Installation Services in Nigeria", href: "#" },
+];

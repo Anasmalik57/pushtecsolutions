@@ -1,12 +1,12 @@
 "use client";
 import Layout from "@/components/layout/Layout";
+import { sidebarServices } from "@/components/PushTechData";
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Swiper options remain unchanged
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 5,
@@ -57,6 +57,7 @@ export default function Home() {
     status: false,
     key: 1,
   });
+  const [isOpen, setOpen] = useState(false);
 
   const handleToggle = (key) => {
     if (isActive.key === key) {
@@ -70,25 +71,9 @@ export default function Home() {
       });
     }
   };
-  const [isOpen, setOpen] = useState(false);
 
-  // Array of brand image data
-  const brandImages = [
-    { src: "assets/images/brand/brand-1-1.jpg", alt: "brand" },
-    { src: "assets/images/brand/brand-1-2.jpg", alt: "brand" },
-    { src: "assets/images/brand/brand-1-3.jpg", alt: "brand" },
-    { src: "assets/images/brand/brand-1-4.jpg", alt: "brand" },
-    {
-      src: "assets/images/brand/brand-1-5.jpg",
-      alt: "brand",
-      style: { marginRight: "10px" },
-    },
-    { src: "assets/images/brand/brand-1-1.jpg", alt: "brand" },
-    { src: "assets/images/brand/brand-1-2.jpg", alt: "brand" },
-    { src: "assets/images/brand/brand-1-3.jpg", alt: "brand" },
-    { src: "assets/images/brand/brand-1-4.jpg", alt: "brand" },
-    { src: "assets/images/brand/brand-1-5.jpg", alt: "brand" },
-  ];
+   
+
 
   return (
     <>
@@ -100,59 +85,21 @@ export default function Home() {
               <div className="row">
                 <div className="col-xl-4">
                   <div className="service-details-sidebar">
-                    <div className="service-details-sidebar-single view-all-services">
+                    <div className="service-details-sidebar-single view-all-services"  >
                       <div className="title">
                         <h3>View all Services</h3>
                       </div>
                       <ul>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-angle-right"></i>
-                          </div>
-                          <div className="text">
-                            <Link href="#">Custom Machinery Design</Link>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-angle-right"></i>
-                          </div>
-                          <div className="text">
-                            <Link href="#">Precision Engineering</Link>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-angle-right"></i>
-                          </div>
-                          <div className="text">
-                            <Link href="#">Automation Solutions</Link>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-angle-right"></i>
-                          </div>
-                          <div className="text">
-                            <Link href="#">FMCG Equipment Optimization</Link>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-angle-right"></i>
-                          </div>
-                          <div className="text">
-                            <Link href="#">Maintenance & Support</Link>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-angle-right"></i>
-                          </div>
-                          <div className="text">
-                            <Link href="#">Energy-Efficient Systems</Link>
-                          </div>
-                        </li>
+                        {sidebarServices.map((service, index) => (
+                          <li key={index}>
+                            <div className="icon">
+                              <i className="fa fa-angle-right"></i>
+                            </div>
+                            <div className="text">
+                              <Link href={service.href}>{service.title}</Link>
+                            </div>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <div className="service-details-sidebar-single about-our-factory">
@@ -440,7 +387,7 @@ export default function Home() {
           />
 
           {/* Start Brand One Section */}
-          
+
           {/* End Brand One Section */}
 
           {/* Start Newsletter One Section */}

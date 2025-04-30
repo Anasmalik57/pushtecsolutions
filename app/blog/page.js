@@ -11,10 +11,11 @@ export default function Home() {
           <div className="container">
             <div className="row">
               {blogPosts.map((post, index) => (
-                <div key={index} className="col-xl-4 col-lg-4" >
+                <div key={index} className="col-xl-4 col-lg-4">
                   {/*Blog One Single*/}
-                  <div className="blog-one-single wow fadeInUp"
-                    data-wow-delay={post.delay} 
+                  <div
+                    className="blog-one-single wow fadeInUp"
+                    data-wow-delay={post.delay}
                   >
                     <div className="blog-one-img">
                       <img src={post.image} alt="" />
@@ -44,32 +45,7 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="row">
-              <div className="blog-pg-pagination">
-                <ul className="pg-pagination">
-                  <li className="previous">
-                    <Link href="#" aria-label="Previous">
-                      <i className="fa172 fa-arrow-circle-left"></i>
-                    </Link>
-                  </li>
-                  <li className="count">
-                    <Link href="#">01</Link>
-                  </li>
-                  <li className="count">
-                    <Link href="#">02</Link>
-                  </li>
-                  <li className="count">
-                    <Link href="#">03</Link>
-                  </li>
-                  <li className="next">
-                    <Link href="#" aria-label="Next">
-                      <i className="fa fa-arrow-circle-right"></i>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            </div>{" "}
           </div>
         </section>
         {/*End Blog One Section */}

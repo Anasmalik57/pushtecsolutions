@@ -1,4 +1,8 @@
+import { machines } from "@/components/PushTechData";
+
 export default function Feature() {
+
+
   return (
     <>
       {/*Start Main Service Two Section */}
@@ -13,81 +17,31 @@ export default function Feature() {
             </h2>
           </div>
           <div className="row">
-            <div className="col-xl-4 col-lg-4">
-              {/*Main Service One Sec Single*/}
-              <div
-                className="main-service-one-sec-single wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="main-service-one-sec-img">
-                  <img src="assets/images/service/service-1-img-1.jpg" alt="" />
-                </div>
-                <div className="main-service-one-sec-content">
-                  <div className="main-service-one-count">01</div>
-                  <div className="main-service-one-icon">
-                    <i className="flaticon-mechanical-arm"></i>
+            {machines.map((service, index) => (
+              <div key={index} className="col-xl-4 col-lg-4">
+                {/*Main Service One Sec Single*/}
+                <div
+                  className="main-service-one-sec-single wow fadeInUp"
+                  data-wow-delay={service.delay}
+                >
+                  <div className="main-service-one-sec-img">
+                    <img src={service.image} alt="" />
                   </div>
-                  <h3 style={{ textTransform: "capitalize" }}>
-                    Single head tube filling machine
-                  </h3>
-                  <p style={{ textAlign: "justify" }}>
-                    Efficient and reliable, our Single Head Tube Filling Machine
-                    is designed for precision in filling and sealing tubes of
-                    various materials.
-                  </p>
+                  <div className="main-service-one-sec-content">
+                    <div className="main-service-one-count">{service.count}</div>
+                    <div className="main-service-one-icon">
+                      <i className={service.icon}></i>
+                    </div>
+                    <h3 style={{ textTransform: "capitalize" }}>
+                      {service.title}
+                    </h3>
+                    <p style={{ textAlign: "justify" }}>
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-4 col-lg-4">
-              {/*Main Service One Sec Single*/}
-              <div
-                className="main-service-one-sec-single wow fadeInUp"
-                data-wow-delay="600ms"
-              >
-                <div className="main-service-one-sec-img">
-                  <img src="assets/images/service/service-1-img-2.jpg" alt="" />
-                </div>
-                <div className="main-service-one-sec-content">
-                  <div className="main-service-one-count">02</div>
-                  <div className="main-service-one-icon">
-                    <i className="flaticon-lab-tool"></i>
-                  </div>
-                  <h3 style={{ textTransform: "capitalize" }}>
-                    Double head tube filling machine
-                  </h3>
-                  <p style={{ textAlign: "justify" }}>
-                    Efficient and reliable, our Single Head Tube Filling Machine
-                    is designed for precision in filling and sealing tubes of
-                    various materials.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4">
-              {/*Main Service One Sec Single*/}
-              <div
-                className="main-service-one-sec-single wow fadeInUp"
-                data-wow-delay="900ms"
-              >
-                <div className="main-service-one-sec-img">
-                  <img src="assets/images/service/service-1-img-3.jpg" alt="" />
-                </div>
-                <div className="main-service-one-sec-content">
-                  <div className="main-service-one-count">03</div>
-                  <div className="main-service-one-icon">
-                    <i className="flaticon-carbon"></i>
-                  </div>
-                  <h3 style={{ textTransform: "capitalize" }}>
-                    Double head tube filling machine
-                  </h3>
-                  <p style={{ textAlign: "justify" }}>
-                    Efficient and reliable, our Single Head Tube Filling Machine
-                    is designed for precision in filling and sealing tubes of
-                    various materials.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

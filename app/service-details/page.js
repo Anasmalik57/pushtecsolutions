@@ -72,9 +72,6 @@ export default function Home() {
     }
   };
 
-   
-
-
   return (
     <>
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Service Details">
@@ -85,7 +82,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-xl-4">
                   <div className="service-details-sidebar">
-                    <div className="service-details-sidebar-single view-all-services"  >
+                    <div className="service-details-sidebar-single view-all-services">
                       <div className="title">
                         <h3>View all Services</h3>
                       </div>
@@ -160,16 +157,19 @@ export default function Home() {
                     <div className="service-details-right-text">
                       <h3>Custom Machinery Solutions</h3>
                       <p className="first-text">
-                        At Pushtec Solutions, we specialize in designing and
-                        manufacturing customizable machinery tailored for the
-                        FMCG industry.
+                        At Pushtec Solutions, we provide specialized machinery
+                        and equipment for the pharmaceutical, cosmetic,
+                        toothpaste, and liquid product industries. Our offerings
+                        include advanced filling and packing machines, box
+                        taping systems, and nylon shlive machines.
                       </p>
                       <p className="last-text">
-                        With 15 years of experience, we focus on delivering
-                        solutions that enhance efficiency, precision, and
-                        adaptability, helping businesses optimize their
-                        production processes and achieve unparalleled
-                        performance.
+                        With over 15 years of industry expertise, we also
+                        manufacture storage tanks under the VISSAL brand and
+                        offer comprehensive spare parts and installation
+                        services across Nigeria. Our solutions are designed to
+                        maximize efficiency, precision, and reliability in your
+                        production processes.
                       </p>
                     </div>
                     <div className="why-choose-our-factory">
@@ -189,23 +189,19 @@ export default function Home() {
                           exceptional service.
                         </p>
                         <ul>
-                          <li>
-                            <i className="fa fa-angle-right"></i>Tailored
-                            Solutions
-                          </li>
-                          <li>
-                            <i className="fa fa-angle-right"></i>Precision
-                            Engineering
-                          </li>
-                          <li>
-                            <i className="fa fa-angle-right"></i>Quality
-                            Products
-                          </li>
-                          <li>
-                            <i className="fa fa-angle-right"></i>Reliable
-                            Support
-                          </li>
-                        </ul>
+    <li>
+      <i className="fa fa-angle-right"></i>Tailored Solutions
+    </li>
+    <li>
+      <i className="fa fa-angle-right"></i>Precision Engineering
+    </li>
+    <li>
+      <i className="fa fa-angle-right"></i>Quality Products
+    </li>
+    <li>
+      <i className="fa fa-angle-right"></i>Reliable Support
+    </li>
+  </ul>
                       </div>
                     </div>
                     <ul className="features-list">

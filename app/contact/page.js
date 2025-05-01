@@ -1,9 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import Newsletter from "@/components/Newsletter";
 import Link from "next/link";
-export default function Home() {
-  // LOCATION MAP HERE
 
+export default function Home() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Contact">
@@ -21,7 +20,18 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-xl-6">
-                  <form action="inc/sendemail.php" className="contact-one-form">
+                  <form
+                    target="_blank"
+                    action="https://formsubmit.co/pushtecsolutions@gmail.com"
+                    method="POST"
+                    className="contact-one-form"
+                  >
+                    <input
+                      type="hidden"
+                      name="_next"
+                      target="_blank"
+                      value="https://pushtecsolutions.vercel.app/thank-you"
+                    />
                     <div className="row">
                       <div className="col-xl-6">
                         <div className="input-box">
@@ -29,6 +39,7 @@ export default function Home() {
                             type="text"
                             name="name"
                             placeholder="Your name"
+                            required
                           />
                         </div>
                       </div>
@@ -38,6 +49,7 @@ export default function Home() {
                             type="email"
                             name="email"
                             placeholder="Your E-mail"
+                            required
                           />
                         </div>
                       </div>
@@ -55,6 +67,7 @@ export default function Home() {
                           <textarea
                             name="message"
                             placeholder="Your Message"
+                            required
                           ></textarea>
                         </div>
                       </div>

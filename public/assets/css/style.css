@@ -181,8 +181,13 @@ li {
   margin: 0;
 }
 
-.icon-search-box > button {
-  background: none;
+.icon-search-box > a {
+display: flex;
+justify-content: center;
+align-items: center; gap: 4px;
+color: #ffff;
+background-color: #2fc92f;
+border-radius: 20px;
 }
 .icon-search-box form {
   height: 50px;

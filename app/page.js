@@ -11,6 +11,7 @@ import WhyChooseUs from "@/components/sections/home1/WhyChooseUs"
 import Projects from "@/components/sections/home1/Projects"
 import Services from "@/components/sections/home1/Services"
 import Team from "@/components/sections/home1/Team"
+import ImageSlider from "@/components/ImageSlider"
 export default function Home() {
 
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                 <Testimonial />
                 <News />
                 {/* <Clients /> */}
+                <ImageSlider />
             </Layout>
         </>
     )

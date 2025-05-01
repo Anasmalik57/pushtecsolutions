@@ -1,4 +1,6 @@
+import ImageSlider from "@/components/ImageSlider";
 import Layout from "@/components/layout/Layout";
+import Newsletter from "@/components/Newsletter";
 import Link from "next/link";
 export default function Home() {
   return (
@@ -66,25 +68,25 @@ export default function Home() {
                         alt=""
                       />
                       <div className="blog-classic-date">
-                        <Link href="#">02 May, 2020</Link>
+                        <Link href="/blog-classic">02 May, 2020</Link>
                       </div>
                     </div>
                     <div className="blog-classic-content-box">
                       <ul className="blog-classic-meta">
                         <li>
-                          <Link href="#">
+                          <Link href="/blog-classic">
                             <i className="far fa-user-circle"></i> Admin
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link href="/blog-classic">
                             <i className="far fa-comments"></i> 2 Comments
                           </Link>
                         </li>
                       </ul>
                       <div className="blog-classic-title">
                         <h3>
-                          <Link href="#">
+                          <Link href="/blog-classic">
                             Pushtec Solutions Drives FMCG <br /> Innovation
                             Worldwide.
                           </Link>
@@ -451,28 +453,12 @@ export default function Home() {
           </div>
         </section>
         {/*End Blog Classic Section*/}
-
+        {/* Brands SLider */}
+        <div style={{ marginTop: "80px", marginBottom: "80px" }}>
+          <ImageSlider />
+        </div>
         {/*Start Newsletter One Section */}
-        <section className="newsletter-one-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="newsletter-one-sec-inner">
-                  <div className="title">
-                    <h2>Newsletter Signup</h2>
-                    <p>Sign up for our newsletter to get Updte</p>
-                  </div>
-                  <div className="newsletter-one-input-box">
-                    <input type="Email" placeholder="Email Address" />
-                    <button type="submit" className="button">
-                      <i className="fa fa-paper-plane"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+       <Newsletter />
         {/*End Newsletter One Section */}
       </Layout>
     </>

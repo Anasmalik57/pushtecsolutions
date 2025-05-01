@@ -1,4 +1,6 @@
+import ImageSlider from "@/components/ImageSlider";
 import Layout from "@/components/layout/Layout";
+import Newsletter from "@/components/Newsletter";
 import { testimonials } from "@/components/PushTechData";
 
 export default function Home() {
@@ -44,28 +46,12 @@ export default function Home() {
             </div>
           </section>
           {/*End Testimonials One Section */}
-
+          {/* Brands SLider */}
+          <div style={{ marginTop: "80px", marginBottom: "80px" }}>
+            <ImageSlider />
+          </div>
           {/*Start Newsletter One Section */}
-          <section className="newsletter-one-section">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="newsletter-one-sec-inner">
-                    <div className="title">
-                      <h2>Newsletter Signup</h2>
-                      <p>Sign up for our newsletter to get Updte</p>
-                    </div>
-                    <div className="newsletter-one-input-box">
-                      <input type="Email" placeholder="Email Address" />
-                      <button type="submit" className="button">
-                        <i className="fa fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Newsletter />
           {/*End Newsletter One Section */}
         </div>
       </Layout>

@@ -90,8 +90,9 @@ export default function Footer1() {
                   className="footer-widget_contact-info"
                   style={{ display: "flex", flexDirection: "column" }}
                 >
-                  <a href="/" target="_blank" style={{ width: "18rem" }}>
-                    Pushtec Solutions Limited - 8254565
+                  <a href="/" target="_blank" style={{ width: "20rem" }}>
+                    Pushtec Solutions Limited Nigeria
+                    <br /> Registraion No: 8254565
                   </a>
                   <Link href="tel:+91 7466903135">+91 7466903135</Link>
                   <Link href="tel:+2349045246370">+23 49045246370</Link>

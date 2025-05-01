@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Header1({
   scroll,
@@ -99,16 +100,10 @@ export default function Header1({
                       </div>
                     </div>
                     <div className="icon-search-box">
-                      <button
-                        className="dropdown-toggle"
-                        id="searchDropdown"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        onClick={handlePopup}
-                      >
-                        <i className="fa fa-search" aria-hidden="true"></i>
-                      </button>
+                      <a className="btn" href="https://api.whatsapp.com/send?phone=2348129917833&text=Hello%20i%20am%20intrested" target="_blank">
+                        <FaWhatsapp size={20} />
+                        Whatsapp Us
+                      </a>
                     </div>
                   </div>
                 </div>

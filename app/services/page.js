@@ -1,60 +1,11 @@
 "use client";
+import ImageSlider from "@/components/ImageSlider";
 import Layout from "@/components/layout/Layout";
+import Newsletter from "@/components/Newsletter";
 import { services } from "@/components/PushTechData";
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-const swiperOptions = {
-  modules: [Autoplay, Pagination, Navigation],
-  slidesPerView: 5,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  loop: true,
-
-  // Navigation
-  navigation: {
-    nextEl: ".owl-next",
-    prevEl: ".owl-prev",
-  },
-
-  // Pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-    575: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    767: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1199: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1350: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
-  },
-};
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
@@ -70,7 +21,9 @@ export default function Home() {
                 {services.map((service, index) => (
                   <div key={index} className="col-xl-4 col-lg-4">
                     {/*Main Service One Sec Single*/}
-                    <Link href={"/service-details"} className="main-service-one-sec-single wow fadeInUp"
+                    <Link
+                      href={"/service-details"}
+                      className="main-service-one-sec-single wow fadeInUp"
                       data-wow-delay={service.delay}
                     >
                       <div className="main-service-one-sec-img">
@@ -131,31 +84,13 @@ export default function Home() {
             onClose={() => setOpen(false)}
           />
 
-          {/*Start Brand One Section */}
-
-          {/*End Brand One Section */}
+          {/* Brands SLider */}
+          <div style={{ marginTop: "80px", marginBottom: "80px" }}>
+            <ImageSlider />
+          </div>
 
           {/*Start Newsletter One Section */}
-          <section className="newsletter-one-section">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="newsletter-one-sec-inner">
-                    <div className="title">
-                      <h2>Newsletter Signup</h2>
-                      <p>Sign up for our newsletter to get Updte</p>
-                    </div>
-                    <div className="newsletter-one-input-box">
-                      <input type="Email" placeholder="Email Address" />
-                      <button type="submit" className="button">
-                        <i className="fa fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Newsletter />
           {/*End Newsletter One Section */}
         </div>
       </Layout>

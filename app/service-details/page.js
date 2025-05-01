@@ -1,5 +1,7 @@
 "use client";
+import ImageSlider from "@/components/ImageSlider";
 import Layout from "@/components/layout/Layout";
+import Newsletter from "@/components/Newsletter";
 import { sidebarServices } from "@/components/PushTechData";
 import Link from "next/link";
 import { useState } from "react";
@@ -189,19 +191,23 @@ export default function Home() {
                           exceptional service.
                         </p>
                         <ul>
-    <li>
-      <i className="fa fa-angle-right"></i>Tailored Solutions
-    </li>
-    <li>
-      <i className="fa fa-angle-right"></i>Precision Engineering
-    </li>
-    <li>
-      <i className="fa fa-angle-right"></i>Quality Products
-    </li>
-    <li>
-      <i className="fa fa-angle-right"></i>Reliable Support
-    </li>
-  </ul>
+                          <li>
+                            <i className="fa fa-angle-right"></i>Tailored
+                            Solutions
+                          </li>
+                          <li>
+                            <i className="fa fa-angle-right"></i>Precision
+                            Engineering
+                          </li>
+                          <li>
+                            <i className="fa fa-angle-right"></i>Quality
+                            Products
+                          </li>
+                          <li>
+                            <i className="fa fa-angle-right"></i>Reliable
+                            Support
+                          </li>
+                        </ul>
                       </div>
                     </div>
                     <ul className="features-list">
@@ -382,31 +388,13 @@ export default function Home() {
             onClose={() => setOpen(false)}
           />
 
-          {/* Start Brand One Section */}
-
-          {/* End Brand One Section */}
+          {/* Brands SLider */}
+          <div style={{ marginTop: "80px", marginBottom: "80px" }}>
+            <ImageSlider />
+          </div>
 
           {/* Start Newsletter One Section */}
-          <section className="newsletter-one-section">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="newsletter-one-sec-inner">
-                    <div className="title">
-                      <h2>Newsletter Signup</h2>
-                      <p>Sign up for our newsletter to get Updte</p>
-                    </div>
-                    <div className="newsletter-one-input-box">
-                      <input type="Email" placeholder="Email Address" />
-                      <button type="submit" className="button">
-                        <i className="fa fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Newsletter />
           {/* End Newsletter One Section */}
         </div>
       </Layout>

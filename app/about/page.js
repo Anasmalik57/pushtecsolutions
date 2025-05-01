@@ -7,6 +7,8 @@ import CounterUp from "@/components/elements/CounterUp";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { teamMembers } from "@/components/PushTechData";
+import ImageSlider from "@/components/ImageSlider";
+import Newsletter from "@/components/Newsletter";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -38,8 +40,6 @@ const swiperOptions = {
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
   const currentYear = new Date().getFullYear();
-
-  
 
   return (
     <>
@@ -199,10 +199,7 @@ export default function Home() {
             </div>
             <div className="row">
               {teamMembers.map((member, index) => (
-                <div
-                  key={index}
-                  className="col-xl-3 col-lg-3 col-md-6"
-                >
+                <div key={index} className="col-xl-3 col-lg-3 col-md-6">
                   <div
                     className="team-one-single wow fadeInLeft"
                     data-wow-delay={member.delay}
@@ -340,28 +337,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* End History One Section */}
-        {/* Start Newsletter One Section */}
-        <section className="newsletter-one-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="newsletter-one-sec-inner">
-                  <div className="title">
-                    <h2>Newsletter Signup</h2>
-                    <p>Sign up for our newsletter to get Updte</p>
-                  </div>
-                  <div className="newsletter-one-input-box">
-                    <input type="Email" placeholder="Email Address" />
-                    <button type="submit" className="button">
-                      <i className="fa fa-paper-plane"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Brands SLider */}
+        <div style={{ marginTop: "80px", marginBottom: "80px" }}>
+          <ImageSlider />
+        </div>
+        <Newsletter />
         {/* End Newsletter One Section */}
       </Layout>
     </>

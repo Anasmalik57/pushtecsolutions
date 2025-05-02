@@ -22,7 +22,7 @@ export default function Home() {
                 <div className="col-xl-6">
                   <form
                     target="_blank"
-                    action="https://formsubmit.co/pushtecsolutions@gmail.com"
+                    action="https://formsubmit.co/puranranakumar@gmail.com"
                     method="POST"
                     className="contact-one-form"
                   >

@@ -1,0 +1,101 @@
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 20px;
+}
+
+.thank-you-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.check-circle {
+  width: 80px;
+  height: 80px;
+  background: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.check-icon {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+
+.thank-you-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.thank-you-message {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.back-home-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #6e8efb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-home-button:hover {
+  background: #5a78e0;
+  transform: translateY(-2px);
+}
+
+.back-home-button:active {
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you-card {
+    padding: 24px;
+  }
+
+  .thank-you-title {
+    font-size: 2rem;
+  }
+
+  .thank-you-message {
+    font-size: 1rem;
+  }
+
+  .back-home-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

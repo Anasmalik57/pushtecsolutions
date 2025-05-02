@@ -59,6 +59,34 @@ const swiperOptions = {
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
+
+  const portfolioItems = [
+    {
+      video:
+        "https://res.cloudinary.com/dozvbxpje/video/upload/v1746186128/WhatsApp_Video_2025-04-25_at_12.24.18_8160fa9c_djcj18.mp4",
+    },
+    {
+      video:
+        "https://res.cloudinary.com/dozvbxpje/video/upload/v1746186320/WhatsApp_Video_2025-04-25_at_12.29.38_0c8901bf_y9chaz.mp4",
+    },
+    {
+      video:
+        "https://res.cloudinary.com/dozvbxpje/video/upload/v1746186169/WhatsApp_Video_2025-04-25_at_12.26.29_32edfd73_g1cbci.mp4",
+    },
+    {
+      video:
+        "https://res.cloudinary.com/dozvbxpje/video/upload/v1746186154/WhatsApp_Video_2025-04-25_at_12.27.15_0d31200c_n2mbme.mp4",
+    },
+    {
+      video:
+        "https://res.cloudinary.com/dozvbxpje/video/upload/v1746186143/WhatsApp_Video_2025-04-25_at_12.26.18_b9bb7ed5_fbbhty.mp4",
+    },
+    {
+      video:
+        "https://res.cloudinary.com/dozvbxpje/video/upload/v1746186134/WhatsApp_Video_2025-04-25_at_12.26.23_facb0a01_bbkx5z.mp4",
+    },
+  ];
+
   return (
     <>
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Project">
@@ -68,240 +96,25 @@ export default function Home() {
             <div className="portfolio-one-content">
               <div className="sortable-masonry">
                 <div className="row items-container">
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all mechanical chemical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-1.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-1.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
+                  {portfolioItems.map((item, index) => (
+                    <div
+                      key={index}
+                      className={`col-xl-4 col-lg-4 col-md-6 masonry-item all ${item.categories}`}
+                    >
+                      <div className="" style={{ cursor: "pointer" }}>
+                        <video
+                          src={item.video}
+                          controls
+                          style={{ width: "100%", height: "300px" }}
+                          onError={(e) =>
+                            console.error("Video failed to load:", item.video)
+                          }
+                        >
+                          <p>Video not supported or failed to load.</p>
+                        </video>
                       </div>
                     </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all agriculture chemical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-2.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-2.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all agriculture mechanical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-3.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-3.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all mechanical chemical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-4.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-4.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all agriculture chemical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-5.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-5.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all agriculture mechanical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-6.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-6.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all agriculture mechanical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-7.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-7.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all agriculture mechanical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-8.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-8.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Single Case One*/}
-                  <div className="col-xl-4 col-lg-4 col-md-6 masonry-item all agriculture mechanical material">
-                    <div className="portfolio-one-single">
-                      <div className="portfolio-one-img-box">
-                        <img
-                          src="assets/images/portfolio/port-1-img-9.jpg"
-                          alt=""
-                        />
-                        <div className="portfolio-two-icon-box">
-                          <Link
-                            href="assets/images/portfolio/port-1-img-9.jpg"
-                            className="img-popup"
-                          >
-                            <i className="fa fa-search"></i>
-                          </Link>
-                          <Link href="project">
-                            <i className="fa fa-link"></i>
-                          </Link>
-                        </div>
-                        <div className="portfolio-text">
-                          <h4>Mechanical Engineering</h4>
-                          <p>Mechanical</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -350,13 +163,13 @@ export default function Home() {
           onClose={() => setOpen(false)}
         />
 
-           {/* Brands SLider */}
-           <div style={{ marginTop: "80px", marginBottom: "80px" }}>
-            <ImageSlider />
-          </div>
+        {/* Brands SLider */}
+        <div style={{ marginTop: "80px", marginBottom: "80px" }}>
+          <ImageSlider />
+        </div>
 
         {/*Start Newsletter One Section */}
-       <Newsletter />
+        <Newsletter />
         {/*End Newsletter One Section */}
       </Layout>
     </>

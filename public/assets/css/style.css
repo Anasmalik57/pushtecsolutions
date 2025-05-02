@@ -182,12 +182,13 @@ li {
 }
 
 .icon-search-box > a {
-display: flex;
-justify-content: center;
-align-items: center; gap: 4px;
-color: #ffff;
-background-color: #2fc92f;
-border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #ffff;
+  background-color: #2fc92f;
+  border-radius: 20px;
 }
 .icon-search-box form {
   height: 50px;
@@ -5506,4 +5507,25 @@ ul.recent-searches {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.mobileli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  /* list-style: none; */
+  list-style-type: circle;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.mobile-btn > span {
+  /* border: 4px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 20px;
+  color: #ffff;
+  background-color: #2abc2a;
 }

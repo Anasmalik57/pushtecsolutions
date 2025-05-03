@@ -122,7 +122,7 @@ export default function Header2({
               <div className="icon-search-box">
                 <a
                   className="btn"
-                  href="https://api.whatsapp.com/send?phone=2348129917833&text=Hello%20i%20am%20intrested"
+                  href="https://api.whatsapp.com/send?phone=917466903135&text=Hello%20Pushtec,%20Team%20,%20I%20am%20interested"
                   target="_blank"
                 >
                   <FaWhatsapp size={20} />

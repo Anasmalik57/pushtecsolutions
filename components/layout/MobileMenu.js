@@ -85,7 +85,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu }) => {
             <div className="mobileli">
               <a
                 className="mobile-btn"
-                href="https://api.whatsapp.com/send?phone=2348129917833&text=Hello%20i%20am%20intrested"
+                href="https://api.whatsapp.com/send?phone=917466903135&text=Hello%20Pushtec,%20Team%20,%20I%20am%20interested"
                 target="_blank"
               >
                 <span className="btn">

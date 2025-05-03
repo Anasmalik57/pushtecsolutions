@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
 
@@ -14,7 +15,7 @@ export default function Cta() {
                         <div className="col-xl-12">
                             <div className="video-two-sec-inner">
                                 <div className="video-two-sec-icon">
-                                    <a onClick={() => setOpen(true)} className="video-two-sec-btn video-popup"><i className="fa fa-play"></i></a>
+                                    <Link href={'/project'}  className="video-two-sec-btn video-popup"><i className="fa fa-play"></i></Link>
                                 </div>
                                 <div className="video-two-sec-content">
                                     <h2>We offer the best <span>industrial services.</span> <br/> 15+ years of experience</h2>

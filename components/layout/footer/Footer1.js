@@ -200,7 +200,16 @@ export default function Footer1() {
           <div className="row">
             <div className="col-xl-12">
               <div className="footer-bottom">
-                <p> &copy; {currentYear} Pushtec | All Rights Reserved.</p>
+                <p>
+                  {" "}
+                  &copy; {currentYear} Pushtec | All Rights Reserved. |{" "}
+                  <a
+                    style={{ color: "#fff" }}
+                    href="https://github.com/Anasmalik57"
+                  >
+                    Developer by Febtech
+                  </a>
+                </p>
               </div>
             </div>
           </div>
